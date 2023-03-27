@@ -1,14 +1,14 @@
 # Setup
-title:        Project or Site name
-tagline:      A responsive theme for your project on GitHub Pages
+title:        Haoyun
+tagline:      A postgraduate student at SUSTech majoring in robotics.
 baseurl:      ""
 paginate:     1
 locale:       "en"
 
 # About/contact
 author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+  name:       Haoyun Yan
+  url:        https://github.com/xtimberlake
 
 # Gems
 gems:
