@@ -3,6 +3,31 @@ layout: default
 title: {{ site.name }}
 ---
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文字和图片的DIV</title>
+  <style>
+    .text {
+      text-align: left;
+      padding: 20px;
+      background-color: #ffffff;
+      font-family: Times,serif;
+      color: black;
+      font-size: 19px;
+      
+    }
+    .image {
+      text-align: left;
+      padding: 20px;
+    }
+    .image img {
+      max-width: 68%;
+      height: auto;
+    }
+  </style>
+  </head>
+
 <div id="home">
   
 
@@ -27,16 +52,70 @@ title: {{ site.name }}
         style="margin:0px 0px 0px 0px"/> </a>Southern University of Science
          and Techonology, under the supervision of <a href="https://sustech.edu.cn/zh/faculties/fuchenglong.html">
          Prof. Chenglong Fu</a>.
-        My research interests include <b>human-augmentation robotics</b>, <b>model</b>- and <b>learning</b>-based control.
-        I received my B.Eng. in Automation from <a hef="https://www.scau.edu.cn/">SCAU</a>, Guangzhou, China in 2021.
+        My research interests include human-augmentation robotics, model- and learning-based control.
+        I received my B.Eng. in Automation from SCAU, Guangzhou, China in 2021.
       </p>
       <p>
-        I am seeking for a Planning and Control Engineer position within the robotics or autonomous driving industry :)
+        I am currently seeking for a Planning and Control Engineer position within the robotics or autonomous driving industry :)
       </p>
 
 
     <hr>
     <h1>Research</h1>
+
+    
+    
+    <div id="container" style="width:900px">
+
+      <!-- <div id="header">
+      <h3 style="margin-bottom:0;">Locomotion Control for Human-Centaur System via DoFs Allocation</h3></div> -->
+      
+      <div id="menu" style="
+      height:300px;
+      width:300px;
+      float:left">
+       <div>
+        <img src="/data/pictures/human-centaur-photo.png" 
+        alt="human centaur photo"
+        style="
+        margin:50px 0px 0px 10px;
+        width: 270px;">
+       </div>
+      </div>
+
+      <div id="content" style="height:200px;width:600px;float:left;">
+        <div style="height:80px;width:600px;float:left;font-family: Times,serif;color: black; font-size: 19px;">
+          <b>Locomotion Control for Human-Centaur System with Spherical <br> Joint Interaction</b>
+        </div>
+        <div id="content" style="height:180px;width:600px;float:left;font-family: Times; font-size:14px; color: black">
+          <b>Abstract</b>:
+          This paper presents a locomotion controller for a novel human-augmented legged robot, the Centaur robot, which is primarily developed to extend the human's ability to carry load. For such a human-robot walking system, there are requirements for the robot to maintain a balanced posture, provide a proper range of motion for human, and walk in omnidirection with human. In this paper, we propose a locomotion planning and control framework that attempts to fulfill these requirements. The reduced-ordered dynamics model-based controller is utilized to regulate the robot's posture and height. A torso state planner combined with the spherical joint interaction is proposed to allow human's trunk motion to be independent of the robot's torso. To further enable the Centaur robot to accommodate human's walking, an omni-directional walking strategy, driven by human's real-time movement, is presented. Experiments are conducted to verify the methods. Results show the robot can walk with human subject while retaining the mean absolute error of posture angles (roll, pitch, and yaw) at 1.50±0.23∘ , 4.20±2.39∘ , and 5.79±2.13∘ . The methods provide the human with moderate degrees of freedom in rotational and vertical motion when interacting with the robot. The walking planning approach enables the wearable legged robot to walk forward, backward, laterally, and turn around with the wearer.
+          <br>
+          [
+          <a href="https://ieeexplore.ieee.org/document/10480718" style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Paper</em></a> |
+          <!-- <a  style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Video</em></a> | -->
+          <a href="https://github.com/xtimberlake/workspace_git" style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Code</em></a>
+          ]
+        </div>
+
+       
+        <!-- <div id="content" style="height:10px;width:600px;float:left;font-size: 14px;">
+          
+        </div> -->
+        
+
+
+        </div>
+        
+        <div id="footer" style="clear:both;text-align:center;">
+
+      </div>
+      
+    </div>
+
+    <br></br>
+    <br></br>
+    <br></br>
 
     <div id="container" style="width:900px">
 
@@ -57,7 +136,7 @@ title: {{ site.name }}
       </div>
 
       <div id="content" style="height:200px;width:600px;float:left;">
-        <div style="height:40px;width:600px;float:left;font-family: Times,serif;color: black;font-size: 19px;">
+        <div style="height:80px;width:600px;float:left;font-family: Times,serif;color: black;font-size: 19px;">
           <b>A Centaur System for Assisting Human Walking with Load Carriage</b>
         </div>
         <div id="content" style="height:180px;width:600px;float:left;font-family: Times; font-size:14px; color: black">
@@ -82,8 +161,8 @@ title: {{ site.name }}
           <br>
           [
           <a href="https://ieeexplore.ieee.org/document/9981394" style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Paper</em></a> |
-          <a href="https://github.com/xtimberlake/xrl0923" style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Code</em></a> |
-          <a href="https://www.bilibili.com/video/BV1zu411n7ss" style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Video</em></a>
+          <a href="https://github.com/xtimberlake/xrl0923" style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Code</em></a> 
+          <!-- <a href="https://www.bilibili.com/video/BV1zu411n7ss" style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Video</em></a> -->
           ]
         </div>
         <!-- <div id="content" style="height:10px;width:600px;float:left;font-size: 14px;">
@@ -98,75 +177,15 @@ title: {{ site.name }}
       
     </div>
 
-    <br></br>
 
 
-    <div id="container" style="width:900px">
 
-      <!-- <div id="header">
-      <h3 style="margin-bottom:0;">Locomotion Control for Human-Centaur System via DoFs Allocation</h3></div> -->
-      
-      <div id="menu" style="
-      height:300px;
-      width:300px;
-      float:left">
-       <div>
-        <img src="/data/pictures/human-centaur-photo.png" 
-        alt="human centaur photo"
-        style="
-        margin:50px 0px 0px 10px;
-        width: 270px;">
-       </div>
-      </div>
-
-      <div id="content" style="height:200px;width:600px;float:left;">
-        <div style="height:40px;width:600px;float:left;font-family: Times,serif;color: black; font-size: 19px;">
-          <b>Locomotion Control for Human-Centaur System via DoFs Allocation</b>
-        </div>
-        <div id="content" style="height:180px;width:600px;float:left;font-family: Times; font-size:14px; color: black">
-          <b>Abstract</b>:
-          This paper presents a locomotion controller for a
-novel human-augmented legged robot, Centaur robot, which is
-primarily developed to extend the ability for a person to carry
-load. With the mind of minimizing the contradiction between
-human's and robot's motion, the degrees of freedom (DoFs) of
-the human-robot system are decomposed and allocated between
-them. The ball-and-socket joint is proposed as a means of
-physical human-robot interaction to eliminate their rotational
-disturbance. A horizontal-DoFs-free dynamic model, combined
-with a model predictive controller is utilized to compute the
-robotic ground reaction forces that stabilize the robot's posture
-and height. Simulation are conducted to show the proposed
-controller helps the wearable legged robot to move forward,
-backward, laterally, and turn under the guidance of human
-user. The results of 30 kg load-carrying experiments suggest
-the Centaur robot reduces the mean load weight by 38.26%,
-in comparison to a conventional carrying method.
-          <br>
-          [
-          <!-- <a  style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Video</em></a> | -->
-          <a href="https://github.com/xtimberlake/workspace_git" style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Code</em></a>
-          ]
-        </div>
-
-       
-        <!-- <div id="content" style="height:10px;width:600px;float:left;font-size: 14px;">
-          
-        </div> -->
-
-        </div>
-        
-        <div id="footer" style="clear:both;text-align:center;">
-
-      </div>
-      
-    </div>
 
     <br></br>
 
     <hr>
     <h1 style="margin:0px 0px 0px -20px;">Projects</h1>
-    
+
     <div id="container" style="width:900px">
 
       <!-- <div id="header">
@@ -279,34 +298,90 @@ in comparison to a conventional carrying method.
   <div id="container" style="width:1200px">
     <div id="content" style="height:380px;width:600px;float:left;">
       <div style="height:70px;width:600px;float:left;font-family: Times,serif;color: black; font-size: 19px;margin:0px 0px 0px -20px;">
-        <b>Human’s vertical motion adaption for Human-Centaur System</b>
+        <b>Human’s vertical motion adaptation for Centaur Robot</b>
       </div>
-          <img src="/data/pictures/human_vertical_motion_adaption_for_Centaur_robot.png" 
+          <img src="/data/pictures/human_vertical_motion_adaption_for_Centaur_robot2.png" 
           alt="RL photo"
           style="
           margin:0px 0px 0px 0px;
           width: 1200px;
           ">
-    </div>
+      </div>
       <div id="footer" style="clear:both;text-align:center;">
     </div>
-</div>
+  </div>
    
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
 
+
+
+
+      <div id="content" style="height:180px;width:600px;float:left;font-family: Times; font-size:14px; color: black">
+        <div style="height:40px;width:700px;float:left;font-family: Times,serif;color: black; font-size: 19px;">
+          <strong>球铰关节交互的半人马系统行走控制研究 （毕业论文）</strong>
+        </div>
+        <b>摘要</b>:
+        负重运输是日常生活中的一项常见任务。长期负重可能会损伤人体的关节或肌肉，为了增强人类的负重行走能力，研究者设计多种可穿戴式机器人。外肢体机器人具有能够将负载重量传递到地面与解放穿戴者四肢运动的优势，有潜力成为强大且人机友好的负重行走机器人。
+        然而，如何控制半人马机器人在日常环境中跟随用户行走仍是一个具有挑战的的问题。
+        本文围绕新型外肢体机器人——半人马机器人展开研究，通过设计行走规划与控制器，以实现人机系统协同行走。
+            <br>
+        &nbsp&nbsp&nbsp首先在机械结构方面，为降低机器人对穿戴者的运动干扰，提出了球铰的物理人机交互方式，以解耦人机系统之间的旋转自由度。
+        为满足足式系统行走的平衡稳定性需求，设计了基于降阶动力学模型的平衡控制器，以实现机器人在行走过程中的动态平衡。
+        针对穿戴外肢体机器人时用户灵活度低的问题，为机器人提出了全向行走策略，通过调整机器人的落足点位置以跟随穿戴者的即时运动。
+        为应对非平坦地形的行走的挑战，提出了在非平坦地形的躯干状态规划器，然后设计了地形感知与足端运动调整算法以提升半人马机器人的地形适应能力。
+        <br>
+        &nbsp&nbsp&nbsp所提出的控制策略部署在了半人马机器人样机中。实验结果展示了半人马机器人能够在多种场景下跟随穿戴者行走。机器人能够保持其躯干姿态角平衡。全向行走策略使得机器人能够跟随用户进行转弯、前进、后退、侧向行走以及变速行走。
+        基于视觉感知的规划控制方法实现了半人马机器人跨越障碍物、上下台阶、上下斜坡以及在草地和碎石路面行走。
+        负重对比实验数据表明，相比于刚性连接负载条件，使用半人马背负 170 N 负载时能降低 35.83% 的平均负载力。
+        <br>
+        <br> 
+        [
+        <a href="/data/pictures/HaoyunYAN_Thesis_0330.pdf" download="HaoyunYAN_Thesis_0330.pdf" style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;">
+          <em>论文下载</em> 
+        </a> 
+        ]
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+
+
+      <div class="image">
+        <img src="/data/pictures/contents_structure.png"  alt="图片">
+      </div>
 
 
     <br>
     <hr>
     
-    <h1>Coursework</h1>
+    <!-- <h1>Coursework</h1>
 
     Under construction.
     
     <hr>
     <h1>Awards</h1>
-    Under construction.
+    Under construction. -->
 
     <!-- <p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>. <a href="https://github.com">Links</a> should be blue with no underlines (unless hovered over).</p>
 
