@@ -25,8 +25,19 @@ title: {{ site.name }}
       max-width: 68%;
       height: auto;
     }
+    .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 2px solid black;
+            padding: 20px;
+            z-index: 1000;
+    }
   </style>
-  </head>
+</head>
 
 <div id="home">
   
@@ -94,10 +105,14 @@ title: {{ site.name }}
           [
           <a href="https://ieeexplore.ieee.org/document/10480718" style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Paper</em></a> |
           <!-- <a  style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Video</em></a> | -->
-          <a href="https://github.com/xtimberlake/workspace_git" style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Code</em></a>
+          <a href="https://github.com/xtimberlake/workspace_git" style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Code</em></a> |
+          <a href="#" onclick="openPopup('data/pictures/centaur_video.mp4')"style="font-family: Arial, Helvetica, sans-serif;text-decoration: underline;"> <em>Video</em></a>
           ]
-        </div>
 
+          
+         
+        </div>
+        
        
         <!-- <div id="content" style="height:10px;width:600px;float:left;font-size: 14px;">
           
@@ -365,12 +380,35 @@ title: {{ site.name }}
       <br>
       <br>
       
-
-
       <div class="image">
         <img src="/data/pictures/contents_structure.png"  alt="图片">
       </div>
 
+
+
+    
+    <div id="videoPopup" class="popup">
+        <video width="640" height="360" controls>
+            <source id="videoSource" src="/data/pictures/centaur_video.mp4" type="video/mp4">
+        </video>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    
+  
+    <script>
+        function openPopup(videoURL) {
+            var popup = document.getElementById('videoPopup');
+            var videoSource = document.getElementById('videoSource');
+            
+            videoSource.src = videoURL;
+            popup.style.display = 'block';
+        }
+    
+        function closePopup() {
+            var popup = document.getElementById('videoPopup');
+            popup.style.display = 'none';
+        }
+    </script>
 
     <br>
     <hr>
